@@ -412,16 +412,28 @@ footer {
     }
 
         .nav-links ul {
-        display: none;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.5rem;
+        
+            .nav-links ul li {
+        margin: 0;
+        padding: 0;
     }
+
+    .nav-links ul li a {
+        font-size: 0.7rem;
+        padding: 0.3rem 0.5rem;
+    }}
 
         .name-black {
         font-size: 1.2rem;
     }
 
     nav .container {
-        justify-content: center;
-    }
+        justify-content: space-between;    }
     
     .hero-title {
         font-size: 2rem;

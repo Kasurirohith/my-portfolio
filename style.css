@@ -68,6 +68,7 @@ nav .container {
     font-size: 3rem;
     margin-bottom: 1rem;
     animation: fadeInDown 1s;
+        color: #000;
 }
 
 .hero-subtitle {

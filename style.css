@@ -718,3 +718,221 @@ footer {
     transform: translateY(-5px);
     box-shadow: 0 25px 50px rgba(15, 23, 42, 0.45);
         }
+
+
+/* ============================
+   MOBILE RESPONSIVE STYLES
+   ============================ */
+
+/* Tablet and below (768px) */
+@media (max-width: 768px) {
+    /* Navigation adjustments */
+    nav .container {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px 20px;
+    }
+    
+    .logo {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-bottom: 15px;
+        width: 100%;
+    }
+    
+    .name-black {
+        font-size: 1.2rem;
+        margin-right: 10px;
+    }
+    
+    .icon-link {
+        margin-left: 5px;
+        font-size: 0.85rem;
+        padding: 3px 8px;
+    }
+    
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+    }
+    
+    .nav-links li {
+        width: 100%;
+        text-align: left;
+    }
+    
+    .nav-links a {
+        display: block;
+        padding: 10px;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 8px;
+    }
+    
+    /* Hero section */
+    #hero {
+        padding: 60px 0;
+    }
+    
+    .hero-title {
+        font-size: 2rem;
+        line-height: 1.3;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+        padding: 0 10px;
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+        width: 100%;
+        padding: 0 20px;
+    }
+    
+    .glass-btn {
+        width: 100%;
+        padding: 12px 20px;
+        text-align: center;
+    }
+    
+    /* Container adjustments */
+    .container {
+        padding: 0 15px;
+    }
+    
+    /* Skills grid */
+    .skills-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    /* Projects grid */
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    /* Internships grid */
+    .internships-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    /* Certificate grid */
+    .cert-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    /* Timeline adjustments */
+    .timeline-item {
+        padding-left: 0;
+        border-left: none;
+    }
+    
+    .timeline-item::before {
+        display: none;
+    }
+    
+    /* Section titles */
+    .section-title {
+        font-size: 1.8rem;
+    }
+    
+    /* Contact grid */
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Mobile phones (480px and below) */
+@media (max-width: 480px) {
+    /* Navigation */
+    nav {
+        padding: 10px 0;
+    }
+    
+    .name-black {
+        font-size: 1rem;
+    }
+    
+    .icon-link {
+        font-size: 0.75rem;
+        padding: 2px 6px;
+    }
+    
+    .nav-links {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .nav-links li {
+        width: 48%;
+        margin-bottom: 8px;
+    }
+    
+    .nav-links a {
+        font-size: 0.85rem;
+        padding: 8px;
+    }
+    
+    /* Hero section */
+    .hero-title {
+        font-size: 1.5rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 0.9rem;
+    }
+    
+    .glass-btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+    
+    /* Section titles */
+    .section-title {
+        font-size: 1.5rem;
+    }
+    
+    /* Text adjustments */
+    body {
+        font-size: 0.9rem;
+    }
+    
+    /* Cards */
+    .project-card,
+    .internship-card,
+    .cert-card {
+        padding: 15px;
+    }
+    
+    /* Skill tags */
+    .tag {
+        font-size: 0.8rem;
+        padding: 5px 10px;
+    }
+}
+
+/* Very small devices (360px and below) */
+@media (max-width: 360px) {
+    .hero-title {
+        font-size: 1.3rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 0.85rem;
+    }
+    
+    .nav-links li {
+        width: 100%;
+    }
+    
+    .section-title {
+        font-size: 1.3rem;
+    }
+}

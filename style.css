@@ -408,4 +408,141 @@ footer {
     .cert-grid {
         grid-template-columns: 1fr;
     }
+
+/* Name color and icons near name */
+.name-black {
+    color: #000;
+}
+
+.icon-link {
+    margin-left: 8px;
+    font-size: 1rem;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 4px 8px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    transition: background 0.3s, transform 0.3s;
+}
+
+.icon-link:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateY(-1px);
+}
+
+/* Hero buttons: Apple-like glass (ice fog) */
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.glass-btn {
+    background: radial-gradient(circle at top left, rgba(255,255,255,0.9), rgba(255,255,255,0.5));
+    color: #111;
+    padding: 14px 34px;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    box-shadow:
+        0 18px 40px rgba(0, 0, 0, 0.28),
+        inset 0 1px 0 rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(22px);
+    -webkit-backdrop-filter: blur(22px);
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+}
+
+.glass-btn::before {
+    content: "";
+    position: absolute;
+    top: -120%;
+    left: -40%;
+    width: 80%;
+    height: 260%;
+    background: linear-gradient(
+        120deg,
+        rgba(255, 255, 255, 0.4),
+        rgba(255, 255, 255, 0.02),
+        rgba(255, 255, 255, 0.4)
+    );
+    transform: rotate(18deg);
+    opacity: 0.0;
+    pointer-events: none;
+    transition: opacity 0.4s, transform 0.4s;
+}
+
+.glass-btn:hover {
+    transform: translateY(-3px) scale(1.02);
+    box-shadow:
+        0 22px 60px rgba(0, 0, 0, 0.35),
+        inset 0 1px 0 rgba(255, 255, 255, 0.85);
+    background: radial-gradient(circle at top left, rgba(255,255,255,1), rgba(255,255,255,0.7));
+}
+
+.glass-btn:hover::before {
+    opacity: 1;
+    transform: translateX(18%);
+}
+
+/* Glassy project & certificate cards */
+.glass-card {
+    background: rgba(255, 255, 255, 0.16);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    box-shadow:
+        0 18px 40px rgba(15, 23, 42, 0.35),
+        inset 0 1px 0 rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    position: relative;
+    overflow: hidden;
+}
+
+.glass-card::before {
+    content: "";
+    position: absolute;
+    inset: -40%;
+    background: radial-gradient(circle at top, rgba(255, 255, 255, 0.52), transparent 60%);
+    opacity: 0.35;
+}
+
+/* Certificate images */
+.cert-img {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 12px;
+    box-shadow: 0 8px 18px rgba(0,0,0,0.25);
+    object-fit: contain;
+}
+
+/* Project links */
+.project-link {
+    display: inline-block;
+    margin-top: 15px;
+    color: #3498db;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.project-link:hover {
+    color: #2980b9;
+    text-decoration: underline;
+}
+
+/* Update hero section background */
+#hero {
+    background: radial-gradient(circle at top, #e5f0ff, #cfd9ff, #a4b4ff) !important;
+    color: #111 !important;
+    padding: 100px 0;
+    text-align: center;
+}
 }

@@ -410,6 +410,18 @@ footer {
         gap: 1rem;
         font-size: 0.9rem;
     }
+
+        .nav-links ul {
+        display: none;
+    }
+
+        .name-black {
+        font-size: 1.2rem;
+    }
+
+    nav .container {
+        justify-content: center;
+    }
     
     .hero-title {
         font-size: 2rem;

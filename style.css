@@ -50,6 +50,7 @@ nav .container {
 .nav-links {
     display: flex;
     list-style: none;
+        flex-direction: row;
     gap: 2rem;
 }
 

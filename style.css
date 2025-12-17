@@ -407,11 +407,11 @@ footer {
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 480px) {
     .nav-links {
         gap: 1rem;
         font-size: 0.9rem;
-    }
+    480px
 
         .nav-links ul {
         display: flex;
@@ -1029,4 +1029,22 @@ footer {
         width: 30px;
         height: 30px;
     }
+}
+
+    /* =============================
+   DESKTOP NAVIGATION OVERRIDE
+   (Ensures horizontal menu)
+============================= */
+
+nav .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
 }
